@@ -1,0 +1,9 @@
+﻿  player.cpp
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\Lab1\player.cpp(9,30): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\Lab1\player.cpp(9,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\Lab1\player.cpp(27,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\Lab1\player.cpp(29,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\Lab1\player.cpp(30,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\Lab1\player.cpp(61,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\Lab1\player.cpp(65,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Lab1.vcxproj -> C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab1\x64\Debug\Lab1.exe

@@ -1,0 +1,68 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Boids.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Boid.cpp
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(44,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Boid.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(44,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Boid.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(55,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Boid.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(55,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Boid.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(59,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Boid.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(59,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Boid.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.cpp(162,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.cpp(190,25): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.cpp(230,35): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+  Game.cpp
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(44,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(44,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(55,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(55,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(59,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Boid.h(59,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(40,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(40,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(45,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(45,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,36): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,36): warning C4244:         with
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,36): warning C4244:         [
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,36): warning C4244:             T=int
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,36): warning C4244:         ]
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,21): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,21): warning C4244:         with
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,21): warning C4244:         [
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,21): warning C4244:             T=int
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(148,21): warning C4244:         ]
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,47): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,47): warning C4244:         with
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,47): warning C4244:         [
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,47): warning C4244:             T=int
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,47): warning C4244:         ]
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,32): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,32): warning C4244:         with
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,32): warning C4244:         [
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,32): warning C4244:             T=int
+C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\Boids\Game.cpp(152,32): warning C4244:         ]
+  Generating Code...
+  Boids.vcxproj -> C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Flock\x64\Debug\Flock.exe
