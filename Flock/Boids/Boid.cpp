@@ -187,7 +187,7 @@ Pvector Boid::seek(Pvector& v)
 void Boid::update()
 {
 	//To make the slow down not as abrupt
-	acceleration.mulScalar(.1);
+	acceleration.mulScalar(.4);
 	// Update velocity
 	velocity.addVector(acceleration);
 	// Limit speed
@@ -246,25 +246,79 @@ void Boid::swarm(vector <Boid>& v)
 {
 /*		Lenard-Jones Potential function
 			Vector R = me.position - you.position
-			Real D = R.magnitude()
-			Real U = -A / pow(D, N) + B / pow(D, M)
+			Real D(distance) = R.magnitude()
+			Real U = -A(atrract) / pow(D, N) + B(repel) / pow(D, M)
 			R.normalise()
 			force = force + R*U
+
+			N -> repel exponent 
+			M -> attract exponent
+			U -> potential energy-?
 */
+
 	Pvector	R;
 	Pvector sum(0, 0);
+	int count = 0;
+	bool tightForm = true;
+	bool looseForm = false;
+	float repulsion = 95.f;
+	float attraction = 26.f;
+	float N = .74f;
+	float M = 1.f;
+
+	if (tightForm)
+	{
+		repulsion = 95.f;
+		attraction = 26.f;
+		N = .74f;
+		M = 1.f;
+		if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
+		{
+			tightForm = false;
+			looseForm = true;
+		}
+	}
+	else if (looseForm)
+	{
+		attraction = 100.f;
+		repulsion = 8000.f;
+		N = 1.05f;
+		M = 1.95f;
+		if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
+		{
+			tightForm = true;
+			looseForm = false;
+		}
+	}
 
 	for (int i = 0; i < v.size(); i++)
 	{
-		 /*{ location.distance(v[i].location), location.distance(v[i].location) } - { location.distance(v[i].location), location.distance(v[i].location) };*/
+		R.x = location.x - v[i].location.x;
+		R.y = location.y - v[i].location.y;
 
-		
+		float mag = R.magnitude();
+		if (mag > 0)
+		{
+			float U = -attraction / std::pow(mag, N) + repulsion / std::pow(mag, M);
+
+			R.normalize();
+
+			R.mulScalar(U);
+
+			sum.addVector(R);
+
+			count++;
+		}
 	}
-
-
-// Your code here..
-
+	// Holding Right Mouse Tightens formation
+	if (count > 0 && looseForm == false)
+	{
+		sum.divScalar((float)count);
+	}
+		
+	sum.mulScalar(1.0);
 	applyForce(sum);
+
 	update();
 	borders();
 }

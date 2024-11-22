@@ -34,10 +34,10 @@ Game::Game()
 		std::cout << "successfully loaded ariblk.ttf font file" << std::endl;
 
 
-	for (int i = 0; i < 600; i++) //Number of boids is hardcoded for testing pusposes.
+	for (int i = 0; i < 500; i++) //Number of boids is hardcoded for testing pusposes.
 	{
-		//Boid b(rand() % window_width, rand() % window_height); //Starts the boid with a random position in the window.
-		Boid b(window_width / 3, window_height / 3); //Starts all boids in the center of the screen
+		Boid b(rand() % window_width, rand() % window_height); //Starts the boid with a random position in the window.
+		//Boid b(window_width / 3, window_height / 3); //Starts all boids in the center of the screen
 		sf::CircleShape shape(8, 3); //Shape with a radius of 10 and 3 points (Making it a triangle)
 
 		//Changing the Visual Properties of the shape
