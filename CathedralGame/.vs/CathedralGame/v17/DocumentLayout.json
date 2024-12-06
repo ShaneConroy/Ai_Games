@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8058B8D4-1EE1-4237-BC75-6A520D0B3E1D}|CathedralGame\\CathedralGame.vcxproj|C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8058B8D4-1EE1-4237-BC75-6A520D0B3E1D}|CathedralGame\\CathedralGame.vcxproj|solutionrelative:CathedralGame\\Grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Ai.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CathedralGame\\Ai.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -22,17 +18,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Ai.h",
               "DocumentMoniker": "C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Ai.h",
               "RelativeDocumentMoniker": "CathedralGame\\Ai.h",
               "ToolTip": "C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Ai.h",
               "RelativeToolTip": "CathedralGame\\Ai.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-06T14:57:34.653Z",
               "IsPinned": true,
@@ -40,29 +36,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Ai.cpp",
               "DocumentMoniker": "C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Ai.cpp",
               "RelativeDocumentMoniker": "CathedralGame\\Ai.cpp",
               "ToolTip": "C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Ai.cpp",
               "RelativeToolTip": "CathedralGame\\Ai.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-06T14:58:05.405Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Grid.h",
-              "DocumentMoniker": "C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Grid.h",
-              "RelativeDocumentMoniker": "CathedralGame\\Grid.h",
-              "ToolTip": "C:\\Users\\gameuser\\Desktop\\Foldera\\College\\Ai Games\\Ai_Games\\CathedralGame\\CathedralGame\\Grid.h",
-              "RelativeToolTip": "CathedralGame\\Grid.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-06T17:48:41.196Z",
               "IsPinned": true,
               "EditorCaption": ""
             }
