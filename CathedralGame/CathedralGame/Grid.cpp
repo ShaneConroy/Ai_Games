@@ -7,16 +7,27 @@ Grid::Grid()
 
 void Grid::constructGrid()
 {
-	for (int rows = 0; rows <= ROWS; rows++)
+	for (int tile =  0; tile < MAX_GRID; tile++)
 	{
-
+		tileArray.push_back(Tile(tile, GRID_SIZE, TILE_SIZE));
 	}
 }
 
-void Grid::update()
+void Grid::update(sf::RenderWindow& window, PieceManager& pieceManager)
 {
+	for (Tile tile : tileArray)
+	{
+		tile.update();
+	}
+
+	pieceManager.onTileClick(window, tileArray);
+	pieceManager.previewPiece(window, tileArray);
 }
 
 void Grid::draw(sf::RenderWindow& window)
 {
+	for (Tile tile : tileArray)
+	{
+		tile.draw(window);
+	}
 }

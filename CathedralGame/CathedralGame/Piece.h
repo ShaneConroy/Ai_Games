@@ -2,23 +2,29 @@
 #include "PieceEnum.h"
 #include "global.h"
 
-//Black -> 36, 26, 15
-//White -> 238, 220, 151
-//Border -> 150, 77, 34
-//Tile(B) -> 28, 28, 36
-//Tile(W) -> 204, 204, 204
-
 class Piece
 {
+public:
+
+	Piece(int piece = 0, sf::Vector2f pos = sf::Vector2f(0, 0));
+	void draw(sf::RenderWindow& window);
+	void setMatrix(pieceType);
+	pieceType getType() { return type; };
+	void setPosition(sf::Vector2f);
+	sf::Vector2f getPos() { return piecePos; };
+	std::vector<int>pieceMatrix = std::vector<int>(9, 0);
+
 private:
 
 	pieceType type;
 
-	sf::RectangleShape tile;
+	sf::Vector2f piecePos;
 
-public:
 
-	Piece();
+	std::vector<sf::RectangleShape> pieceShape;
+
+	// This function will take the piece matrix and generate a shape
+	void generatePiece();
 
 };
 

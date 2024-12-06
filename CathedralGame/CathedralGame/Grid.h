@@ -1,14 +1,13 @@
 #pragma once
 #include "global.h"
-#include "Piece.h"
+#include "Tile.h"
+#include "PieceManager.h"
 
 class Grid
 {
 private:
-
-	int const ROWS = 10;
-	int const COLS = 10;
-	std::vector<Piece> grid;
+	
+	std::vector<Tile> tileArray;
 
 	void constructGrid();
 
@@ -17,7 +16,8 @@ public:
 	Grid();
 
 	void draw(sf::RenderWindow& window);
-	void update();
+	void update(sf::RenderWindow& window, PieceManager& pieceManager);
+
 
 };
 

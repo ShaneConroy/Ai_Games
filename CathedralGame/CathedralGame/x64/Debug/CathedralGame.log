@@ -1,8 +1,2 @@
-﻿  Grid.cpp
-C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Ai_Games\CathedralGame\CathedralGame\Grid.cpp(17,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Ai_Games\CathedralGame\CathedralGame\Grid.cpp(17,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Ai_Games\CathedralGame\CathedralGame\Grid.cpp(32,12): warning C4834: discarding return value of function with [[nodiscard]] attribute
-  Source.cpp
-C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Ai_Games\CathedralGame\CathedralGame\Source.cpp(20,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Generating Code...
+﻿  PieceManager.cpp
   CathedralGame.vcxproj -> C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Ai_Games\CathedralGame\x64\Debug\CathedralGame.exe

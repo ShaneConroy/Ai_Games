@@ -16,6 +16,7 @@
 #include <SFML/Graphics.hpp> 
 
 #include "Grid.h"
+#include "PieceManager.h"
 
 void main()
 {
@@ -27,18 +28,33 @@ void main()
 	clock.restart();
 
 	Grid grid;
+	PieceManager manager({ 700, 50 });
+	manager.placePieces({ 700, 50 });
+
 
 	while (window.isOpen())
 	{
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+			window.close();
+
+
 		timeSinceLastUpdate += clock.restart();
 
 		if (timeSinceLastUpdate > timePerFrame)
 		{
-			window.display();
+			window.clear();
 
+			manager.onClick(window);
+
+			grid.update(window, manager);
 			grid.draw(window);
 
+			manager.draw(window);
+
+
+			window.display();
 			timeSinceLastUpdate = sf::Time::Zero;
 		}
 	}
 }
+
