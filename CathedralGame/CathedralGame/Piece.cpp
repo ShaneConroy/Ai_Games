@@ -78,6 +78,13 @@ void Piece::setMatrix(pieceType type)
                         1, 1, 1,
                         0, 1, 0 };
         break;
+
+    case pieceType::cathedral:
+        pieceMatrix = { 0, 1, 0,
+                        1, 1, 1,
+                        0, 1, 0,
+                        0, 1, 0 };
+        break;
     }
 }
 
@@ -97,6 +104,26 @@ void Piece::generatePiece()
     {
         for (int col = 0; col < 3; col++)
         {
+            if (pieceMatrix.size() == 12) // The cathedral piece
+            {
+                for (int row = 0; row < 4; row++)
+                {
+                    for (int col = 0; col < 3; col++)
+                    {
+                        if (pieceMatrix[row * 3 + col] == 1)
+                        {
+                            sf::RectangleShape shape(sf::Vector2f(TILE_SIZE - 2, TILE_SIZE - 2));
+                            shape.setPosition(piecePos + sf::Vector2f(col * TILE_SIZE, row * TILE_SIZE));
+
+                            shape.setFillColor(sf::Color(212, 212, 212));
+                            shape.setOutlineColor(sf::Color::Black);
+                            shape.setOutlineThickness(2);
+
+                            pieceShape.push_back(shape);
+                        }
+                    }
+                }
+            }
             if (pieceMatrix[row * 3 + col] == 1)
             {
                 sf::RectangleShape shape(sf::Vector2f(TILE_SIZE - 2, TILE_SIZE - 2));
@@ -112,7 +139,7 @@ void Piece::generatePiece()
     }
 }
 
-void Piece::draw(sf::RenderWindow& window) 
+void Piece::draw(sf::RenderWindow& window)
 {
     for (size_t iter = 0; iter < pieceShape.size(); iter++)
     {

@@ -7,7 +7,7 @@ Grid::Grid()
 
 void Grid::constructGrid()
 {
-	for (int tile =  0; tile < MAX_GRID; tile++)
+	for (int tile = 0; tile < MAX_GRID; tile++)
 	{
 		tileArray.push_back(Tile(tile, GRID_SIZE, TILE_SIZE));
 	}
@@ -22,6 +22,7 @@ void Grid::update(sf::RenderWindow& window, PieceManager& pieceManager)
 
 	pieceManager.onTileClick(window, tileArray);
 	pieceManager.previewPiece(window, tileArray);
+	pieceManager.previewPieceCathedral(window, tileArray);
 }
 
 void Grid::draw(sf::RenderWindow& window)

@@ -18,5 +18,6 @@ enum class pieceType
 	academy,
 	infirmary,
 	castle,
-	tower
+	tower,
+	cathedral
 };

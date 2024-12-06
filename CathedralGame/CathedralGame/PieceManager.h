@@ -54,6 +54,13 @@ public:
     */
     void previewPiece(sf::RenderWindow& window, std::vector<Tile>& grid);
 
+    /**
+    * @brief Same functionality as previewPiece,only this one is specifically only for the Cathdral piece
+    * @param Window for draw
+    * @param grid is an array of class Tile
+    */
+    void previewPieceCathedral(sf::RenderWindow& window, std::vector<Tile>& grid);
+
 private:
 
     Piece piece; ///< Piece object

@@ -6,7 +6,7 @@
 class Grid
 {
 private:
-	
+
 	std::vector<Tile> tileArray;
 
 	void constructGrid();
@@ -20,4 +20,3 @@ public:
 
 
 };
-
