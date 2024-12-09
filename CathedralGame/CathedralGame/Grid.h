@@ -18,5 +18,6 @@ public:
 	void draw(sf::RenderWindow& window);
 	void update(sf::RenderWindow& window, PieceManager& pieceManager);
 
+	std::vector<Tile>& returnTileArray() { return tileArray; };
 
 };

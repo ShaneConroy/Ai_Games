@@ -112,7 +112,6 @@ void PieceManager::onTileClick(sf::RenderWindow& window, std::vector<Tile>& grid
                 }
             }
 
-
             // If the piece is placeable and the mouse is clicked
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && placeable)
             {
@@ -297,6 +296,89 @@ void PieceManager::previewPieceCathedral(sf::RenderWindow& window, std::vector<T
         }
     }
 }
+
+bool PieceManager::canPlacePiece(pieceType type, int tileIndex, std::vector<Tile>& grid)
+{
+    int matrixRows = 3;
+    int matrixCols = 3;
+
+    Piece tempMatrix(static_cast<int>(type), sf::Vector2f(0, 0));
+    const std::vector<int>& shapeMatrix = tempMatrix.pieceMatrix;
+
+    int matrixCentreRow = matrixRows / 2;
+    int matrixCentreCol = matrixCols / 2;
+
+    int clickedRow = tileIndex / GRID_SIZE;
+    int clickedCol = tileIndex % GRID_SIZE;
+    int startRow = clickedRow - matrixCentreRow;
+    int startCol = clickedCol - matrixCentreCol;
+
+    for (int row = 0; row < matrixRows; ++row)
+    {
+        for (int col = 0; col < matrixCols; ++col)
+        {
+            if (shapeMatrix[row * matrixCols + col] == 1)
+            {
+                int targetRow = startRow + row;
+                int targetCol = startCol + col;
+                int targetIndex = targetRow * GRID_SIZE + targetCol;
+
+                if (targetRow < 0 || targetRow >= GRID_SIZE ||
+                    targetCol < 0 || targetCol >= GRID_SIZE ||
+                    grid[targetIndex].checkTaken())
+                {
+                    return false;
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
+void PieceManager::placePiece(pieceType type, int tileIndex, std::vector<Tile>& grid, bool place)
+{
+    int matrixRows = 3;
+    int matrixCols = 3;
+
+    if (type == pieceType::cathedral)
+    {
+        matrixRows = 4;
+        matrixCols = 3;
+    }
+
+    Piece tempMatrix(static_cast<int>(type), sf::Vector2f(0, 0));
+    const std::vector<int>& shapeMatrix = tempMatrix.pieceMatrix;
+
+    int matrixCentreRow = matrixRows / 2;
+    int matrixCentreCol = matrixCols / 2;
+
+    int clickedRow = tileIndex / GRID_SIZE;
+    int clickedCol = tileIndex % GRID_SIZE;
+    int startRow = clickedRow - matrixCentreRow;
+    int startCol = clickedCol - matrixCentreCol;
+
+    for (int row = 0; row < matrixRows; ++row)
+    {
+        for (int col = 0; col < matrixCols; ++col)
+        {
+            if (shapeMatrix[row * matrixCols + col] == 1)
+            {
+                int targetRow = startRow + row;
+                int targetCol = startCol + col;
+                int targetIndex = targetRow * GRID_SIZE + targetCol;
+
+                if (targetRow >= 0 && targetRow < GRID_SIZE &&
+                    targetCol >= 0 && targetCol < GRID_SIZE)
+                {
+                    grid[targetIndex].updateTaken(place);
+                    grid[targetIndex].setColour(place ? sf::Color(238, 220, 151) : sf::Color(204, 204, 204));
+                }
+            }
+        }
+    }
+}
+
 
 
 void PieceManager::draw(sf::RenderWindow& window)

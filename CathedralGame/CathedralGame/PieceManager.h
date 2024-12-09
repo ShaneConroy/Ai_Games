@@ -61,6 +61,11 @@ public:
     */
     void previewPieceCathedral(sf::RenderWindow& window, std::vector<Tile>& grid);
 
+
+    bool canPlacePiece(pieceType type, int tileIndex, std::vector<Tile>& grid);
+
+    void placePiece(pieceType type, int tileIndex, std::vector<Tile>& grid, bool place);
+
 private:
 
     Piece piece; ///< Piece object

@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ai.cpp" />
     <ClCompile Include="Grid.cpp" />
     <ClCompile Include="Piece.cpp" />
     <ClCompile Include="PieceManager.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ai.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Piece.h" />
