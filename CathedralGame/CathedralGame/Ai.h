@@ -7,7 +7,8 @@
 class Ai
 {
 public:
-    Ai(PieceManager& pieceManager, Grid& grid);
+    Ai(PieceManager& pieceManager, Grid& gameGrid);
+    void update();
 
 private:
 
@@ -19,12 +20,14 @@ private:
     // Return the list
     std::vector<bool> checkPossibleMoves();
 
-    // takes in the vector of bools and evaluates them
-    void evaluateMoves(std::vector<bool>);
+    std::vector<bool> placePiece(std::vector<bool>, int);
+
+    void startAi();
 
     // The minimax function
-    int depth = 1;
-    int minimax(int, bool);
-
-    int evaluateBoard();
+    int depth = 0;
+    int const MAX_DEPTH = 2;
+    int minimax(int, bool, std::vector<bool>);
+    int miniMaxRuns = 0;
+    int evaluateBoard(std::vector<bool>);
 };

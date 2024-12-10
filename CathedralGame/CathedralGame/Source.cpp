@@ -17,6 +17,7 @@
 
 #include "Grid.h"
 #include "PieceManager.h"
+#include "Ai.h"
 
 void main()
 {
@@ -31,6 +32,7 @@ void main()
 	PieceManager manager({ 700, 50 });
 	manager.placePieces({ 700, 50 });
 
+	Ai ai(manager, grid);
 
 	while (window.isOpen())
 	{
@@ -45,6 +47,8 @@ void main()
 			window.clear();
 
 			manager.onClick(window);
+
+			ai.update();
 
 			grid.update(window, manager);
 			grid.draw(window);

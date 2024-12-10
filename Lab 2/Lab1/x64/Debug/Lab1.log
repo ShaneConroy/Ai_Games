@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab 2\Lab1\main.cpp(10,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Lab1.vcxproj -> C:\Users\gameuser\Desktop\Foldera\College\Ai Games\Lab 2\x64\Debug\Lab1.exe

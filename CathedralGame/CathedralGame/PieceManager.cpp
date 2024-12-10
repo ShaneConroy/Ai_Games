@@ -129,6 +129,7 @@ void PieceManager::onTileClick(sf::RenderWindow& window, std::vector<Tile>& grid
 
                                 grid[targetIndex].setColour(sf::Color(238, 220, 151));
                                 grid[targetIndex].updateTaken(true);
+                                startAi = true;
                             }
                         }
                     }
@@ -147,6 +148,7 @@ void PieceManager::onTileClick(sf::RenderWindow& window, std::vector<Tile>& grid
 
                                 grid[targetIndex].setColour(sf::Color(238, 220, 151));
                                 grid[targetIndex].updateTaken(true);
+                                startAi = true;
                             }
                         }
                     }

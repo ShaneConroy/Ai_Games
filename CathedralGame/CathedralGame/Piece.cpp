@@ -1,8 +1,10 @@
 #include "Piece.h"
 
-Piece::Piece(int piece, sf::Vector2f pos) : piecePos(pos)
+Piece::Piece(int piece, sf::Vector2f pos, team tileTeam) : piecePos(pos)
 {
     type = static_cast<pieceType>(piece);
+
+    tileTeam = team::white;
 
     setMatrix(type);
 

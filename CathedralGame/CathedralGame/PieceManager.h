@@ -66,6 +66,8 @@ public:
 
     void placePiece(pieceType type, int tileIndex, std::vector<Tile>& grid, bool place);
 
+    bool startAi = false;
+
 private:
 
     Piece piece; ///< Piece object
@@ -75,4 +77,5 @@ private:
     int pieceCap = 30; ///< Max pieces on the board
     pieceType selectedPiece; ///< Currently selected piece
     Tile tile; ///< Tile object
+
 };

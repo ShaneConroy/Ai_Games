@@ -7,7 +7,7 @@ class Tile
 {
 private:
     pieceType type;
-    team team;
+    team tileTeam;
 
     void behaviours(pieceType);
 
@@ -33,4 +33,6 @@ public:
     sf::Color getColour() { return tile.getFillColor(); };
     bool checkTaken() { return taken; };
     void updateTaken(bool temp) { taken = temp; };
+
+    team returnTeam() { return tileTeam; };
 };
